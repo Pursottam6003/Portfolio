@@ -127,6 +127,7 @@ ul.navigationbar
     justify-content: space-between;
     background-color: #fff;
     padding-bottom: 15px;
+    z-index: 1;
 
 }
 
@@ -161,6 +162,7 @@ ul li
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #659DBD;
+    z-index: 1;
 }
 
 .About 
