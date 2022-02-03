@@ -1,0 +1,1164 @@
+/* inportant color  */
+
+:root 
+{
+    --black:#010110;
+    --blue:rgb(63, 63, 177);
+    --pink:rgb(224, 59, 59);
+    
+     
+}
+body
+*{
+    box-sizing: border-box;
+}
+/* main container */
+.container 
+{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    background-color: #A8D0E6;
+    --varln:var(--black);
+}
+
+.description
+{
+    padding-top: 0.5rem;
+    padding-bottom: 3px;
+    width: max-content;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.description a 
+{
+    text-decoration: none;
+}
+
+#insta 
+{
+    margin-left: 32px;
+    color: black;
+}
+.image
+{   
+   width:7.5rem;
+   height: auto;
+   margin-top: 1rem;
+   display: inline-block;
+   margin-left: 2rem;
+ 
+}
+
+#profile
+{
+    position: relative;
+    width: 100%;
+    height: 7.5rem;
+    border-radius: 6rem;
+    text-align: center;
+    margin: auto;
+    border: 3px solid rgb(241, 27, 27);
+}
+
+.namasteimg 
+{
+    float: right;
+}
+
+#namaste 
+{
+    width: 100%;
+    height: 300px;    
+}
+
+@media screen and (max-width:670px)
+{
+    .image 
+    {
+        float:left;
+        margin-left: 0px;
+    }
+
+    .description
+    {
+        margin-left: 0px;
+    }
+
+    #namaste 
+    {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 526px)
+{
+    #namaste 
+    {
+        height: 130px;
+        margin-top:1rem;
+    }
+}
+
+@media screen and (max-width:380)
+{   
+    #namaste 
+    {
+        height: 110px;
+        margin-top: 1.5rem;
+    }
+}
+
+#logolink:hover 
+{
+    --varln:var(--blue);
+}
+ 
+ul.navigationbar
+{
+    margin-left: -40px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-bottom: 15px;
+
+}
+
+@media (max-width: 380px) {
+    ul.navigationbar {
+        flex-direction: column;
+        position: static;
+    }
+}
+.navigationbar li a
+{
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+    display: block;
+}
+
+ul li 
+{
+    list-style: none;
+    text-align: center;
+  
+}
+
+
+.navigationbar li 
+{
+    width: auto;
+    max-width: 227px;
+    margin-top:2vh;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #659DBD;
+}
+
+.About 
+{
+    margin-left:15%;
+    margin-right: 15%;
+    text-align: center;
+    
+}
+
+ 
+ 
+li:hover
+{
+    background-color: #659DFF;
+}
+.mainbody
+{
+    margin:auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#myname 
+{
+    color: #f81313;
+}
+.detailsinfo
+{
+    width: 80%;
+   
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.position
+{
+    font-size: large;
+    font-weight: 800;
+}
+
+.buttons 
+{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+} 
+
+.buttons a 
+{
+    text-decoration: none;
+    color:white;
+}
+#mycv 
+{
+    margin:1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: #5626C4;
+    color: white;
+    font-weight: bold;
+}
+
+#resume
+{
+    margin:1rem;
+    background-color: #FA255E;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.mainbody h2 
+{
+    text-align: center;
+}
+.skills
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    gap:20px;
+}
+ 
+
+.images 
+{
+    width: 8rem;
+    margin: auto;
+    position: relative;
+}
+ 
+
+
+.capacity1
+{
+    width: auto;
+    height: 13px;
+    background-color: green;
+    border-radius: 0.3rem;
+}
+
+.capacity1 p 
+{
+    font-size: 12px;
+    color: white;
+    font-weight: bolder;
+}
+.About 
+{
+    padding-top: 20px;
+}
+.About h2 
+{
+    text-align: center;
+}
+
+.About h3 
+{
+    text-align: center;
+}
+
+h3 
+{
+    text-align: center;
+}
+.skill
+{
+    width:50px ;
+    height: 50px;
+}
+
+.php
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+#php 
+{   
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.jquery 
+{
+    width: 40px;
+    height: 40px;
+
+}
+
+#jquery 
+{   position: relative;
+    width: 100%;
+    height: auto;
+}
+    
+
+/* improving the desing  */
+
+.skill :hover
+{
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 0.5rem;
+    background-color: #0bec16bd;
+}
+
+#php:hover 
+{
+    width: 55px;
+    height: 45px;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 0.5rem;
+    background-color: #0bec16bd;
+}
+
+#jquery:hover 
+{
+    width: 55px;
+    height: 45px;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 0.5rem;
+    background-color: #0bec16bd;
+}
+
+#projecticon 
+{   
+    position:relative;
+    margin-left: 48%;
+    margin-right:49%;
+}
+.experience 
+{
+    padding-top: 1.5rem;
+}
+.experience h2
+{
+    text-align: center;
+}
+
+
+/* styling experience part */
+.learn
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+}
+.exp1 
+{
+    width: 250px;
+    height: 435px;
+    margin: auto;
+}
+
+.imageexp1 
+{
+    height: 300px;
+   
+}
+
+#exp1
+{
+    position: relative;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.info1 h4 
+{
+    margin-top:2px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.info1 p 
+{
+    font-size: 14px;
+}
+.info1  a 
+{
+    text-decoration: none;
+}
+
+.imageexp1:hover 
+{
+    width: 260px;
+    height: 320px;
+}
+ 
+.imageexp2
+{
+    height: 230px;
+}
+ 
+.exp2 
+{
+    width: 300px;
+    height: 360px;
+    margin:auto;
+    
+}
+
+#exp2 
+{
+    position: relative;
+    height: 220px;
+    width:  100%;
+}
+
+.info2 p 
+{
+    font-size: 14px;
+}
+ 
+.info2 h4 
+{   
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.info2 a 
+{
+    text-decoration: none;
+}
+
+.imageexp2:hover
+{
+    width: 320px;
+    height: 220px;
+}
+
+
+
+/* for 3rd one  */
+
+
+.exp3
+{
+    width: 320px;
+    height: 450px;
+    margin:auto;
+}
+
+#exp3 
+{
+    position: relative;
+    width:  100%;
+    height: 270px;
+}
+
+
+.imageexp3 
+{
+    width: 310px;
+    height: 270px;
+}
+.info3 p 
+{
+    font-size: 14px;
+}
+ 
+.info3 h4 
+{   
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.info3 a 
+{
+    text-decoration: none;
+}
+
+.imageexp3:hover
+{
+    width: 320px;
+    height: 280px;
+}
+
+.exp4
+{
+    width: 320px;
+    height: 450px;
+    margin:auto;
+}
+
+#exp4
+{
+    position: relative;
+    width:  100%;
+    height: 270px;
+}
+
+
+.imageexp4
+{
+    width: 310px;
+    height: 270px;
+}
+.info4 p 
+{
+    font-size: 14px;
+}
+ 
+.info4 h4 
+{   
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.info4 a 
+{
+    text-decoration: none;
+}
+
+.imageexp4:hover
+{
+    width: 320px;
+    height: 280px;
+}
+
+.exp5 
+{
+    width: 300px;
+    height: 450px;
+    margin:auto;
+}
+
+
+
+#exp5
+{
+    position: relative;
+    width:  100%;
+    height: 270px;
+}
+
+
+.imageexp5
+{
+    width: 310px;
+    height: 270px;
+}
+.info5 p 
+{
+    font-size: 14px;
+}
+ 
+.info5 h4 
+{   
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.info5 a 
+{
+    text-decoration: none;
+}
+
+.imageexp5:hover
+{
+    width: 320px;
+    height: 280px;
+}
+@media only screen  and (max-width:400px){ 
+   
+    /* for image 1 */
+    .exp1
+    {
+        height: fit-content;
+    }
+    .imageexp1
+    {
+        width: 180px;
+        height: 230px;
+        margin:auto;
+    }
+
+    .info1 h4 
+    {
+        font-size: small;
+    }
+    .info1 p 
+    {
+        font-size: 12px;
+    }
+
+    .imageexp1:hover
+    {
+        width: 180px;
+        height: 240px;
+    }
+
+    /* image 2  */
+    .imageexp2
+    {
+        width: 260px;
+        margin:auto;
+        height: auto;
+    }
+
+    .imageexp2:hover 
+    {
+        width:270;
+        height: auto;
+    }
+
+    .info2 h4 
+    {
+        font-size: small;
+    }
+
+    .info2 p 
+    {
+        font-size: 12px;
+    }
+
+    /* for 3  */
+
+    .imageexp3
+    {
+        width: 280px;
+        margin:auto;
+        height: auto;
+    }
+
+    .imageexp3:hover 
+    {
+        width:290px;
+        height: auto;
+    }
+
+    .info3 h4 
+    {
+        font-size: small;
+    }
+
+    .info3 p 
+    {
+        font-size: 12px;
+    }
+
+
+    /* for image 4 */
+
+    .imageexp4
+    {
+        width: 260px;
+        margin:auto;
+        height: auto;
+    }
+
+    .imageexp4:hover 
+    {
+        width:270;
+        height: auto;
+    }
+
+    .info4 h4 
+    {
+        font-size: small;
+    }
+
+    .info4 p 
+    {
+        font-size: 12px;
+    }
+    
+    /* for image 5 */
+    .imageexp5
+    {
+        width: 260px;
+        margin:auto;
+        height: auto;
+    }
+
+    .imageexp5:hover 
+    {
+        width:270;
+        height: auto;
+    }
+
+    .info5 h4 
+    {
+        font-size: small;
+    }
+
+    .info5 p 
+    {
+        font-size: 12px;
+    }
+
+    .googlecloud
+    {
+        gap:2px;
+    }
+}
+
+
+
+.Experience 
+{
+    text-align: center;
+    padding-top: 2rem;
+}
+.googlecld 
+{
+    width:75%;
+    margin: auto;
+    height:auto;
+    flex-direction: column;
+}
+
+.googlecloud 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+#gcloud 
+{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.badge
+{
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+}
+
+#badge1 
+{   
+    position: relative;
+   
+    width: 100%;
+    height: auto;
+}
+
+#badge2 
+{   
+     
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#badge4
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+#badge5
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#badge6
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#badge7
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#badge8 
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#badge9
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#badge10
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#badge11 
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (min-width:450px)
+{
+    .badge 
+    {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.Hackerrank 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+ 
+
+.hackerank a
+{
+    text-decoration: none;
+    
+}
+
+.rectangel{
+    width: 0;
+    border-bottom: 35px solid  #C5DCE1;
+    border-left: 58px solid transparent;
+    border-right: 58px solid transparent; 
+   
+    
+    
+}
+
+.hbadge
+{
+    width: 115px;
+    height: 70px;
+    background-color: #C5DCE1;
+ 
+  
+}
+
+.rectangle3 
+{
+    width:0;
+  
+    border-top: 35px solid  #C5DCE1;
+    border-left:58px solid transparent;
+    border-right: 58px solid transparent;
+}
+#bdg1 
+{
+    width: 100%;
+    height: auto;
+
+}
+#bdg2 
+{
+    width: 100%;
+    height: auto;
+}
+#bdg3
+{
+    width: 100%;
+    height: auto;
+}
+
+.badges
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+ 
+ 
+.ncc
+{
+    margin: auto;
+    padding-top:30px;
+    
+}
+
+/* contact page in  */
+ 
+.contact 
+{
+   text-align: center;
+   padding-top: 2rem;
+}
+ 
+
+.formitems
+{
+    background-color: #525252;
+    padding:3rem;
+    border-radius: 1rem;
+    width: max-content;
+    margin:auto;
+}
+
+#male 
+{
+    color:white;
+    font-size: large;
+}
+
+#female 
+{
+    color:white;
+    font-size: large;
+}
+
+#other
+{
+    color:white;
+    font-size: large;
+}
+label 
+{
+    font-weight: 700;
+    color:white;
+    font-size: larger;
+}
+
+input 
+{
+    border-radius: 0.3rem;
+    height: 2rem;
+}
+form 
+{
+    display: inline-block;
+    
+     
+}
+
+#name 
+{
+    width: 230px;
+}
+ 
+#email
+{
+    width: 230px;
+}
+
+#phone
+{
+    width: 230px;
+}
+
+
+.submit 
+{
+    width: 55px;
+    padding:4px;
+    height: 30px;
+    color: white;
+    background-color: #f81313;
+}
+
+footer 
+{   
+    margin-top: 100px;
+    background-color: #18191B;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footericons 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+}
+
+.socialhandles 
+{   
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:15px;
+}
+#gmail 
+{
+    margin:4px;
+}
+
+
+.byebye
+{
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    margin: auto;
+  
+}
+
+
+#bye 
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+
+footer 
+{
+    width: 100%;
+}
+footer a 
+{
+    color:white;
+  
+}
+
+.externalLinks 
+{
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    border: 0px;
+}
+
+.externalLinks p 
+{   margin-top: 0%;
+    width: fit-content;
+    font-size: large;
+
+   
+}
+
+.codingID p
+{ 
+    margin-top:0px;
+    font-size: large;   
+
+}
+
+.codingID
+{   
+    float:right;
+    width: 150px;
+    height: 200px;
+    border:0px;
+    text-align: right;
+     
+}
+
+
+@media screen and (max-width:700px)
+{
+    .codingID p
+    {
+        font-size: medium;
+    }
+
+    .externalLinks p 
+    {
+        font-size: medium;
+    }
+
+    .byebye 
+    {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width:470px)
+{
+    .codingID p
+    {
+        font-size: small;
+        width: 100px;
+    }
+
+    .externalLinks p 
+    {
+        font-size: small;
+        width: 100px;
+    }
+
+    .byebye 
+    {
+        width: 110px;
+    }
+}
+
+
+@media screen and (max-width:370px)
+{
+
+    .byebye 
+    {
+        width: 90px;
+        height: 60px;
+    }
+
+    .externalLinks 
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .codingID
+    {   width: 100px;
+        height: 100px;
+    }
+}
