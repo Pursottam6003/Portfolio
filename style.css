@@ -18,7 +18,7 @@ body
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5rem;
+     
     background-color: #A8D0E6;
     --varln:var(--black);
 }
@@ -1103,7 +1103,11 @@ footer a
 
 
 @media screen and (max-width:700px)
-{
+{   
+    .formitems
+    {
+        padding:2rem;
+    }
     .codingID p
     {
         font-size: medium;
@@ -1118,11 +1122,17 @@ footer a
     {
         width: 200px;
     }
+
+
 }
 
 
 @media screen and (max-width:470px)
-{
+{   .formitems 
+    {
+        padding:1rem;
+    }
+
     .codingID p
     {
         font-size: small;
@@ -1139,12 +1149,21 @@ footer a
     {
         width: 110px;
     }
+
+    article 
+    {
+        text-align:start;
+    }
 }
 
 
 @media screen and (max-width:370px)
 {
 
+    .formitems
+    {
+        padding: 0.2rem;
+    }
     .byebye 
     {
         width: 90px;
