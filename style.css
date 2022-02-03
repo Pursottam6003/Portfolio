@@ -131,7 +131,7 @@ ul.navigationbar
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     ul.navigationbar {
         flex-direction: column;
         position: static;
@@ -1182,4 +1182,9 @@ footer a
     {   width: 100px;
         height: 100px;
     } 
+}
+.copyright
+{
+    color:whitesmoke;
+    font-size: medium;     
 }
