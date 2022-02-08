@@ -121,6 +121,14 @@ body
         height: 200px;
     }
 }
+
+@media (min-width:440px)
+{
+    .mobilenav 
+    {
+        display: none;
+    }
+}
 @media screen and (max-width: 526px)
 {
     #namaste 
@@ -152,11 +160,27 @@ ul.navigationbar
     padding-bottom: 15px;
     z-index: 1;
 }
-@media (max-width: 450px) {
+@media (max-width: 440px) {
     ul.navigationbar {
-        flex-direction: column;
-        position: static;
+        display:none;
     }
+
+    ul.mobilenav 
+    {
+        position: sticky;
+        top:0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #A8D0E6;
+        padding:10px;
+        gap:30px;
+        border-radius: 1rem;
+        z-index: 1;
+    }
+
+   
 }
 .navigationbar li a
 {
