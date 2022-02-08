@@ -14,7 +14,7 @@ function intro()
     },2000)
     setInterval(function(){
             
-        mypara.style.color="#0B7307";
+        mypara.style.color="darkmagenta";
         mypara.innerHTML="Tech Geeek";
         mypara.style.transition="0.3s";
         
@@ -23,7 +23,7 @@ function intro()
 
     setInterval(function(){
         mypara.innerHTML="Software Developer";
-        mypara.style.color="red";
+        mypara.style.color="darkslateblue";
         mypara.style.transition="0.3s";
     },5000);
 
@@ -39,7 +39,7 @@ function intro()
     
     setInterval(function(){
         mypara.innerHTML="Music lover";
-        mypara.style.color="magenta";
+        mypara.style.color="darkred";
         mypara.style.transition="0.3s";
 
     },9000);

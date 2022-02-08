@@ -17,23 +17,7 @@ body
     background-color: #A8D0E6;
     --varln:var(--black);
 }
-.description
-{
-    padding-top: 0.5rem;
-    padding-bottom: 3px;
-    width: max-content;
-    text-align: left;
-    margin-left: 2rem;
-}
-.description a 
-{
-    text-decoration: none;
-}
-#insta 
-{
-    margin-left: 32px;
-    color: black;
-}
+
 .image
 {   
    width:7.5rem;
@@ -50,7 +34,40 @@ body
     border-radius: 6rem;
     text-align: center;
     margin: auto;
-    border: 3px solid rgb(241, 27, 27);
+    border: 3px  solid #46a5d8;
+}
+
+#welcome 
+{
+    margin-left: 340px;
+    margin-top: 30px;
+    width:300px;
+    height:120px;
+}
+@media (max-width:1000px)
+{
+    #welcome 
+    {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:890px)
+{
+    #welcome 
+    {
+        margin-left: 100px;
+        width: 200px;
+    }
+}
+
+@media (max-width:590px)
+{
+    #welcome 
+    {
+        margin-left: 30px;
+        width: 150px;
+    }
 }
 .namasteimg 
 {
@@ -61,6 +78,31 @@ body
     width: 100%;
     height: 300px;    
 }
+.description
+{
+    padding-top: 0.5rem;
+    padding-bottom: 3px;
+    width: max-content;
+    text-align: left;
+    margin-left: 2rem;
+}
+.description a 
+{
+    text-decoration: none;
+}
+ 
+#insta 
+{
+    margin-left: 10px;
+    color: black;
+}
+
+#facebook 
+{
+    position: relative;
+    margin-left: 28px;
+}
+
 @media screen and (max-width:670px)
 {
     .image 
@@ -95,13 +137,10 @@ body
         margin-top: 1.5rem;
     }
 }
-#logolink:hover 
-{
-    --varln:var(--blue);
-}
+
 ul.navigationbar
 {
-    margin-left: -40px;
+    margin-left: -30px;
     position: sticky;
     top: 0;
     display: flex;
@@ -109,10 +148,11 @@ ul.navigationbar
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
+
     padding-bottom: 15px;
     z-index: 1;
 }
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     ul.navigationbar {
         flex-direction: column;
         position: static;
@@ -122,14 +162,17 @@ ul.navigationbar
 {
     text-decoration: none;
     border-radius: 1rem;
-    font-weight: 800;
-    color:rgb(255, 255, 255);
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
     display: block;
 }
 ul li 
 {
     list-style: none;
     text-align: center;
+
 }
 .navigationbar li 
 {
@@ -141,25 +184,20 @@ ul li
     background-color: #659DBD;
     z-index: 1;
 }
-.About 
-{
-    margin-left:15%;
-    margin-right: 15%;
-    text-align: center;
-}
 li:hover
 {
     background-color: #659DFF;
 }
+
 .mainbody
 {
     margin:auto;
     text-align: center;
     padding-top: 1rem;
 }
-#myname 
+.mainbody h2 
 {
-    color: #f81313;
+    text-align: center;
 }
 .detailsinfo
 {
@@ -167,10 +205,9 @@ li:hover
     margin-left: auto;
     margin-right:auto;
 }
-.position
+#myname 
 {
-    font-size: large;
-    font-weight: 800;
+    color: #f81313;
 }
 .buttons 
 {
@@ -198,50 +235,23 @@ li:hover
 #resume
 {
     margin:1rem;
-    background-color: #FA255E;
+    background-color: #c00c3c;
     color: white;
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 1rem;
 }
-.mainbody h2 
-{
-    text-align: center;
-}
-.skills
-{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 15px;
-    gap:20px;
-}
- 
 
-.images 
+#logolink:hover 
 {
-    width: 8rem;
-    margin: auto;
-    position: relative;
+    --varln:var(--blue);
 }
 
-.capacity1
-{
-    width: auto;
-    height: 13px;
-    background-color: green;
-    border-radius: 0.3rem;
-}
-
-.capacity1 p 
-{
-    font-size: 12px;
-    color: white;
-    font-weight: bolder;
-}
 .About 
-{
+{   
+    margin-left:15%;
+    margin-right: 15%;
+    text-align: center;
     padding-top: 20px;
 }
 .About h2 
@@ -258,6 +268,16 @@ h3
 {
     text-align: center;
 }
+.skills
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    gap:20px;
+}
+ 
 .skill
 {
     width:50px ;
@@ -296,6 +316,7 @@ h3
     border: 1px solid rgb(3, 3, 3);
     border-radius: 0.5rem;
     background-color: #0bec16bd;
+    border: 2px solid rgb(0, 219, 0);
 }
 
 #php:hover 
@@ -305,6 +326,7 @@ h3
     border: 1px solid rgb(3, 3, 3);
     border-radius: 0.5rem;
     background-color: #0bec16bd;
+    border: 2px solid rgb(0, 219, 0);
 }
 
 #jquery:hover 
@@ -314,6 +336,45 @@ h3
     border: 1px solid rgb(3, 3, 3);
     border-radius: 0.5rem;
     background-color: #0bec16bd;
+    border: 2px solid rgb(0, 219, 0);
+}
+
+.position
+{
+    font-size: large;
+    font-weight: 800;
+}
+
+
+.experience 
+{
+    padding-top: 1.5rem;
+    
+}
+.experience h2
+{
+    text-align: center;
+}
+
+.capacity1 p 
+{
+    font-size: 12px;
+    color: white;
+    font-weight: bolder;
+}
+.images 
+{
+    width: 8rem;
+    margin: auto;
+    position: relative;
+}
+
+.capacity1
+{
+    width: auto;
+    height: 13px;
+    background-color: green;
+    border-radius: 0.3rem;
 }
 
 #projecticon 
@@ -321,14 +382,6 @@ h3
     position:relative;
     margin-left: 48%;
     margin-right:49%;
-}
-.experience 
-{
-    padding-top: 1.5rem;
-}
-.experience h2
-{
-    text-align: center;
 }
 
 
@@ -346,7 +399,7 @@ h3
     width: 250px;
     height: 435px;
     margin: auto;
-}
+} 
 
 .imageexp1 
 {
@@ -397,7 +450,7 @@ h3
 #exp2 
 {
     position: relative;
-    height: 220px;
+    border-radius: 1rem;
     width:  100%;
 }
 
@@ -421,8 +474,8 @@ h3
 
 .imageexp2:hover
 {
-    width: 320px;
-    height: 220px;
+    width: 310px;
+    height: 240px;
 }
 /* for 3rd one  */
 .exp3
@@ -435,14 +488,15 @@ h3
 #exp3 
 {
     position: relative;
+    border-radius: 1rem;
     width:  100%;
-    height: 270px;
+ 
 }
 
 .imageexp3 
 {
     width: 310px;
-    height: 270px;
+    
 }
 .info3 p 
 {
@@ -465,7 +519,7 @@ h3
 .imageexp3:hover
 {
     width: 320px;
-    height: 280px;
+    height: 290px;
 }
 
 .exp4
@@ -478,13 +532,14 @@ h3
 #exp4
 {
     position: relative;
+    border-radius: 1rem;
     width:  100%;
-    height: 270px;
+    
 }
 
 .imageexp4
 {
-    width: 310px;
+   
     height: 270px;
 }
 .info4 p 
@@ -507,8 +562,8 @@ h3
 
 .imageexp4:hover
 {
-    width: 320px;
-    height: 280px;
+    width: 330px;
+    height: 270px;
 }
 
 .exp5 
@@ -521,14 +576,15 @@ h3
 #exp5
 {
     position: relative;
+    border-radius: 1rem;
     width:  100%;
-    height: 270px;
+   
 }
 
 .imageexp5
 {
     width: 310px;
-    height: 270px;
+     
 }
 .info5 p 
 {
@@ -551,7 +607,7 @@ h3
 .imageexp5:hover
 {
     width: 320px;
-    height: 280px;
+    height: 270px;
 }
 @media only screen  and (max-width:400px){ 
     .exp1
@@ -788,6 +844,11 @@ h3
         width: 220px;
         height: 220px;
     }
+
+    .formitems 
+    {
+        margin-top: 20px;
+    }
 }
 
 .Hackerrank 
@@ -851,6 +912,7 @@ h3
     gap:20px;
 }
  
+ 
 .ncc
 {
     margin: auto;
@@ -859,46 +921,78 @@ h3
 /* contact page in  */
 .contact 
 {
-   text-align: center;
+   text-align:left;
    padding-top: 2rem;
+   background-color: #02044A;
+   border-top: 50px solid #9DC4FB;
+   border-bottom: 50px solid #9DC4FB;
+   border-left: 20px solid #9DC4FB;
+   border-right: 20px solid #9DC4FB;
+   border-radius: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+@media screen  and (min-width:800px)
+{   
+    .futureDetails
+    {
+        margin-left: 0;
+    }
+
+    .contact
+    {
+        justify-content: left;
+    }
 }
 .formitems
 {
-    background-color: #525252;
-    padding:3rem;
+    background-color: #3c43ff;
+    padding:1rem;
     border-radius: 1rem;
     width: max-content;
-    margin:auto;
+    margin-left: 20%;
+    margin-bottom: 10px;
 }
 
-#male 
+.futureDetails
 {
+    width: 300px;
+    margin-left: 20%;
+    text-align: left;
     color:white;
-    font-size: large;
 }
-
-#female 
-{
-    color:white;
-    font-size: large;
-}
-
-#other
-{
-    color:white;
-    font-size: large;
-}
+ 
 label 
 {
     font-weight: 700;
     color:white;
-    font-size: larger;
+    font-size: medium;
 }
 
 input 
 {
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     height: 2rem;
+    border: transparent;
+    background-color: rgb(236, 236, 236);
+}
+
+textarea 
+{
+    background-color: rgb(236, 236, 236);
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+input:focus 
+{
+    background-color: white;
+}
+textarea:focus
+{
+    background-color:white;
 }
 form 
 {
@@ -915,18 +1009,13 @@ form
     width: 230px;
 }
 
-#phone
-{
-    width: 230px;
-}
-
 .submit 
 {
-    width: 55px;
+    width: 120px;
     padding:4px;
     height: 30px;
     color: white;
-    background-color: #f81313;
+    background-color: #0C75FF;
 }
 
 footer 
@@ -996,12 +1085,6 @@ footer a
     font-size: large;
 }
 
-.codingID p
-{ 
-    margin-top:0px;
-    font-size: large;   
-}
-
 .codingID
 {   
     float:right;
@@ -1010,16 +1093,24 @@ footer a
     border:0px;
     text-align: right;
 }
+.codingID p
+{ 
+    margin-top:0px;
+    font-size: large;   
+}
+
 
 @media screen and (max-width:700px)
 {   
     .formitems
     {
         padding:2rem;
+        margin-top: 20px;
     }
     .codingID p
     {
         font-size: medium;
+         
     }
 
     .externalLinks p 
@@ -1036,13 +1127,18 @@ footer a
 @media screen and (max-width:470px)
 {   .formitems 
     {
-        padding:1rem;
+        padding:0.7rem;
+        font-size: small;
+        margin: auto;
     }
-
     .codingID p
     {
         font-size: small;
-        width: 100px;
+    }
+
+    .codingID 
+    {
+        text-align: right;
     }
 
     .externalLinks p 
@@ -1067,20 +1163,19 @@ footer a
 {
     .formitems
     {
-        padding: 0.2rem;
+        padding: 0.5rem;
+        margin: auto;
     }
     .byebye 
     {
         width: 90px;
         height: 60px;
     }
-
     .externalLinks 
     {
         height: 100px;
         width: 100px;
     }
-
     .codingID
     {   width: 100px;
         height: 100px;
@@ -1089,5 +1184,5 @@ footer a
 .copyright
 {
     color:whitesmoke;
-    font-size: medium;     
+    font-size: small;     
 }
