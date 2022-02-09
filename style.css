@@ -103,6 +103,34 @@ body
     margin-left: 28px;
 }
 
+@keyframes welcome 
+{
+    0%{background-color: blueviolet; left:0px; top:0px;}
+    15%{transform: rotate(-30deg); background-color: cornflowerblue;}
+    40%{background-color: crimson; top:0px; left: 90%;}
+    65%{ transform: rotate(70deg); background-color: blueviolet; top:0px; left:0px}
+    90%{top:0px;left:0px;} 
+}
+
+.content 
+{
+    width:50px;
+    height: 30px;
+    position: relative;
+    animation-name: welcome ;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
+    background-color: rgb(31, 165, 14);
+    color:white;
+    font-size: small;
+    text-align: center;
+    padding-top:10px;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    
+}
+
 @media screen and (max-width:670px)
 {
     .image 
@@ -178,6 +206,15 @@ ul.navigationbar
         gap:30px;
         border-radius: 1rem;
         z-index: 1;
+    }
+
+    @keyframes direction
+    {
+        0%{background-color: brown;  left:0%;top:0%;}
+        25%{background-color: blueviolet; left:100%;top:0px}
+        50%{background-color: chartreuse; left:100%;top:210px;}
+        75%{background-color: coral; left:0%; top:210px;}
+        100%{background-color: brown; left:0%;top:0%}
     }
 
    
@@ -308,6 +345,28 @@ h3
     height: 50px;
 }
 
+@keyframes direction
+{
+    0%{background-color: brown;  left:0%;top:0%;}
+    25%{background-color: blueviolet; left:100%;top:0px}
+    50%{background-color: chartreuse; left:100%;top:170px;}
+    75%{background-color: coral; left:0%; top:170px;}
+    100%{background-color: brown; left:0%;top:0%}
+}
+.bound
+{
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    animation-name:direction;
+    position: relative;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    border-radius: 3rem;
+    animation-timing-function: ease-in-out;
+   
+}
 .php
 {
     width: 50px;
