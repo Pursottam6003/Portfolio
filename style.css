@@ -229,7 +229,7 @@ a{
     padding-left: 4px;
     padding-right: 4px;
     font-weight:bold;
-    color:rgb(0, 0, 0);
+    color:rgb(250, 253, 255);
     display: block;
 }
 ul li 
@@ -245,8 +245,9 @@ ul li
     margin-top:2vh;
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: #659DBD;
+    background-color: #0966b3;
     z-index: 1;
+    /* #06728d */
 }
 li:hover
 {
@@ -294,8 +295,14 @@ li:hover
     background: #5626C4;
     color: white;
     font-weight: bold;
+    border-color: whitesmoke;
 }
 
+#mycv:hover
+{
+    background: #7c4ceb;
+    box-shadow: 0 0 10px #5429b9;;
+}
 #resume
 {
     margin:1rem;
@@ -304,6 +311,14 @@ li:hover
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 1rem;
+    border-color:white;
+}
+
+#resume:hover 
+{
+    background-color: #e7295c;
+    box-shadow: 0 0 10px #c00c3c;
+ 
 }
 
 #logolink:hover 
@@ -348,27 +363,23 @@ h3
     height: 50px;
 }
 
-@keyframes direction
-{
-    0%{background-color: brown;  left:0%;top:0%;}
-    25%{background-color: blueviolet; left:100%;top:0px}
-    50%{background-color: chartreuse; left:100%;top:170px;}
-    75%{background-color: coral; left:0%; top:170px;}
-    100%{background-color: brown; left:0%;top:0%}
+@keyframes skillsanimation {
+    0%{background-color: #259902; box-shadow: 0 0 10px  #23f108;}
+    25%{background-color: #43d400; box-shadow: 0 0 10px  #23f108;}
+    50%{background-color: #05e905; box-shadow: 0 0 10px #23f108;}
+    100%{background-color: #1ff702; box-shadow: 0 0 10px #23f108;}
 }
-.bound
-{
-    width: 20px;
-    height: 10px;
-    background-color: black;
-    animation-name:direction;
-    position: relative;
-    animation-duration: 6s;
+.bound 
+{ 
+    width: max-content;
+    margin: auto;
+    color:black;
+    padding:5px;
+    animation-duration: 3s;
+    animation-name: skillsanimation;
     animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    border-radius: 3rem;
-    animation-timing-function: ease-in-out;
-   
+    animation-timing-function:ease-in;
+    border-radius: 5px;
 }
 .php
 {
@@ -822,7 +833,32 @@ h3
         gap:2px;
     }
 }
-
+.ani 
+{
+    width: 140px;
+    height: 10px;
+    margin:auto;
+    background-color: rgb(236, 67, 95);
+    border-radius: 5px;
+}
+@keyframes barAni {
+    0%{background-color: white; left:0px;top:0px;}
+    50%{background-color: #e9e50c; left:120px; top:0px;}
+    100%{background-color: white;left:0px; top:0px;}
+}
+.bar 
+{
+    width: 16px;
+    height: 9px;
+    position:relative;
+    animation-name: barAni;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 3px;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    
+}
 .Experience 
 {
     text-align: center;
