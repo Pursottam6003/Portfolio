@@ -364,16 +364,17 @@ h3
 }
 
 @keyframes skillsanimation {
-    0%{background-color: #259902; box-shadow: 0 0 10px  #23f108;}
+    0%{background-color: #259902; }
     25%{background-color: #43d400; box-shadow: 0 0 10px  #23f108;}
-    50%{background-color: #05e905; box-shadow: 0 0 10px #23f108;}
-    100%{background-color: #1ff702; box-shadow: 0 0 10px #23f108;}
+    50%{background-color: #05e905; box-shadow: 0 0 12px #23f108;}
+    100%{background-color: #1ff702; box-shadow: 0 0 14px #23f108;}
 }
 .bound 
 { 
     width: max-content;
     margin: auto;
     color:black;
+    font-weight: 800;
     padding:5px;
     animation-duration: 3s;
     animation-name: skillsanimation;
