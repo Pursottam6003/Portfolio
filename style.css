@@ -219,6 +219,9 @@ ul.navigationbar
 
    
 }
+a{
+    text-decoration: none;
+}
 .navigationbar li a
 {
     text-decoration: none;
