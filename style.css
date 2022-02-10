@@ -371,7 +371,7 @@ h3
 }
 .bound 
 { 
-    width: max-content;
+    width: 100px;
     margin: auto;
     color:black;
     font-weight: 800;
