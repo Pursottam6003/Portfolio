@@ -371,7 +371,7 @@ h3
 }
 .bound 
 { 
-    width: 100px;
+    width: 120px;
     margin: auto;
     color:black;
     font-weight: 800;
@@ -380,7 +380,7 @@ h3
     animation-name: skillsanimation;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
 }
 .php
