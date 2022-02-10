@@ -1,4 +1,21 @@
 let mypara= document.getElementById('p1');
+let myframe= document.getElementById('frame');
+let mybody=document.getElementById('mybody');
+let myvar=0;
+ 
+function loading()
+{   
+    console.log('inside the load');
+    myframe.style.display='block';
+    mybody.style.display='block';
+    window.onscroll = function () { window.scrollTo(0, 0); };
+    setTimeout(function(){
+       
+        myframe.style.display='none';
+        window.onscroll='enabled';
+        
+    },5000);
+}
 
 mypara.innerHTML="Software engineer";
 function intro()
@@ -44,3 +61,4 @@ function intro()
 
     },9000);
 }
+

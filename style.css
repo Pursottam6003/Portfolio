@@ -119,7 +119,7 @@ body
     position: relative;
     animation-name: welcome ;
     animation-duration: 5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 7;
     animation-timing-function: ease-in-out;
     background-color: rgb(31, 165, 14);
     color:white;

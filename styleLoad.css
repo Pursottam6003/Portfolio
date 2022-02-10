@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background: url('load.jpg');
+    z-index: 1;
+    overflow: hidden;
+}
+
+.load 
+{
+    color:white;
+    background-color: black;
+    margin:auto;
+    text-align: center;
+    height: max-content;
+    width: 300px;
+    margin-top: 20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:2px solid white;
+  
+}
+
+.loadbar 
+{
+    height: 5px;
+    width: 120px;
+    background-color: rgb(180, 180, 180);
+    margin:auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+@keyframes move 
+{
+    0%{background-color: rgb(255, 8, 0); width:10px; top:0px;}
+    20%{background-color: rgb(255, 8, 0); width:27px;top:0px;}
+    50%{background-color:rgb(255, 8, 0); width:62px; top:0px;}
+    80%{background-color: rgb(255, 8, 0); width:100px;top:0px;}
+    100%{background-color: rgb(255, 8, 0); width:120px;top:0px;}    
+}
+
+.movebar 
+{
+    position: relative;
+    width: 10px;
+    height: 5px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay:1s;
+}
+
+ 
