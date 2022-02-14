@@ -9,6 +9,11 @@ body
 *{
     box-sizing: border-box;
 }
+ 
+html
+{
+    scroll-behavior: smooth;
+}
 .container 
 {
     width:100%;
@@ -106,10 +111,10 @@ body
 @keyframes welcome 
 {
     0%{background-color: blueviolet; left:0px; top:0px;}
-    15%{transform: rotate(-30deg); background-color: cornflowerblue;}
-    40%{background-color: crimson; top:0px; left: 90%;}
-    65%{ transform: rotate(70deg); background-color: blueviolet; top:0px; left:0px}
-    90%{top:0px;left:0px;} 
+    25%{transform: rotate(-30deg); background-color: cornflowerblue;left:41%;}
+    45%{ transform: rotate(0deg); left:52%;}
+    65%{ transform: rotate(60deg); background-color: blueviolet; top:0px; left:90%;}
+    100%{top:0px;left:0px; transform:rotate(-360deg);} 
 }
 
 .content 
@@ -121,7 +126,7 @@ body
     animation-duration: 5s;
     animation-iteration-count: 7;
     animation-timing-function: ease-in-out;
-    background-color: rgb(31, 165, 14);
+    background-color: rgb(17, 138, 1);
     color:white;
     font-size: small;
     text-align: center;
@@ -1138,8 +1143,8 @@ form
     width: 120px;
     padding:4px;
     height: 30px;
-    color: white;
-    background-color: #0C75FF;
+    color: rgb(241, 236, 236);
+    background-color: #0665e2;
 }
 
 footer 

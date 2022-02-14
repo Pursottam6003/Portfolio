@@ -44,9 +44,9 @@ body{
     width: 10px;
     height: 5px;
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-delay:1s;
+     
 }
 
  
