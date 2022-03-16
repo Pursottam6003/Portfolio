@@ -1002,12 +1002,33 @@ h3
     border-right: 58px solid transparent;  
 }
 
+.rectangel-gold{
+    width: 0;
+    border-bottom: 35px solid  #afbd32;
+    border-left: 58px solid transparent;
+    border-right: 58px solid transparent;  
+}
+
+.rectangle3-gold 
+{
+    width:0;
+    border-top: 35px solid  #b9b244;
+    border-left:58px solid transparent;
+    border-right: 58px solid transparent;
+} 
+.hbadge-gold
+{
+    width: 115px;
+    height: 70px;
+    background-color: #ffffff;
+}
 .hbadge
 {
     width: 115px;
     height: 70px;
     background-color: #C5DCE1;
 }
+
 
 .rectangle3 
 {
