@@ -254,7 +254,11 @@ ul li
     z-index: 1;
     /* #06728d */
 }
-li:hover
+/* li:hover
+{
+  
+} */
+.navigation_hover:hover
 {
     background-color: #659DFF;
 }
