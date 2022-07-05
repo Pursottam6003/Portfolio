@@ -984,7 +984,7 @@
 
 
 
-        <div class="contact reveal" id="contact">
+        <div class="contact" id="contact">
 
             <div class="futureDetails">
                 <h2 class="HowerMe">Get a quote <img
@@ -1022,16 +1022,16 @@
             </div>
             <div class="formitems">
 
-                <form action="" method="post">
+                <!-- <form> -->
                     <label for="name">Full Name</label>
                     <br>
-                    <input type="text" placeholder="Your Name" autocapitalize="none" autocomplete="off" id="name"
+                    <input type="text" id="name" placeholder="Your Name" autocapitalize="none" autocomplete="off" id="name"
                         required>
                     <br>
                     <br>
                     <label for="email">Mail</label>
                     <br>
-                    <input type="email" placeholder="Your Email" autocapitalize="none" autocomplete="off" id="email"
+                    <input type="email"   placeholder="Your Email" autocapitalize="none" autocomplete="off" id="email"
                         required>
                     <br>
                     <br>
@@ -1042,13 +1042,67 @@
                         rows="5"></textarea>
                     <br>
                     <br>
-                    <button class="submit">Send message</button>
+                    <button class="submit" id="InsBtn">Send message</button>
 
-                </form>
+                <!-- </form> -->
             </div>
             <!-- INSERT INTO `contact` (`sno`, `name`, `email`, `phone`, `gender`, `occupation`, `comment`, `dd`) VALUES ('1', 'testname', 'this.gmail.com', '8238090920', 'male', 'nothing', 'nice to meet u', current_timestamp());
          -->
         </div>
+
+        <script type="module">
+          
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+           // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+ 
+            const firebaseConfig = {
+              apiKey: "AIzaSyBvw_gb67m4f5_fgfcex2ReMvkEkTXDWak",
+              authDomain: "portfoliocontacts-50fda.firebaseapp.com",
+              projectId: "portfoliocontacts-50fda",
+              storageBucket: "portfoliocontacts-50fda.appspot.com",
+              messagingSenderId: "49750295373",
+              appId: "1:49750295373:web:848752dd62c435dfa0ad04",
+              measurementId: "G-NQZD0V5XF8"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          //  const analytics = getAnalytics(app);
+            import{getDatabase,ref,get,set,child,update,remove}
+            from "https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js";
+
+            const db = getDatabase(); //calling the database function 
+
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var comment = document.getElementById('comment');
+
+            var insBtn = document.getElementById("InsBtn");
+
+
+            function InsertData()
+            {   let randomNumber=Math.round(Math.random()*10000);
+                // console.log(randomNumber);
+                set(ref(db,"ContactMe/"+randomNumber),{
+                    Name:name.value,
+                    Email:email.value,
+                    Comment:comment.value
+                })
+                .then(()=>{
+                    alert("Form Submitted Sucessfully");
+                })
+
+                .catch((error)=>{
+                    alert("Unsuccessfull,error"+ error);
+                });
+
+                console.log('hello wold');
+            }
+
+            insBtn.addEventListener('click',InsertData);
+
+
+          </script>
 </body>
 
 <footer>
@@ -1112,4 +1166,5 @@
     <span class="copyright">© Policy Pursottam Sah valid upto 2070</span>
     <br>
     <br>
+
 </footer>
