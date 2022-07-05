@@ -370,6 +370,16 @@ h3
     gap:40px;
 }
 
+.viewBlogs
+{
+    float: right;
+    display: block;
+    padding:5px;
+    background-color: purple;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
 .blog_representation
 {
     
