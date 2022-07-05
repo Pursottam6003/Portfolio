@@ -117,6 +117,17 @@ html
     100%{top:0px;left:0px; transform:rotate(-360deg);} 
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .content 
 {
     width:50px;
