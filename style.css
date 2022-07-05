@@ -356,6 +356,71 @@ h3
 {
     text-align: center;
 }
+.Blogheading
+{
+    display: block;
+    text-align: center;
+}
+.blogs
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:40px;
+}
+
+.blog_representation
+{
+    
+    width: 350px;
+    display: block;
+    box-shadow: 2px solid gray;
+}
+
+#blog1
+{
+    color: white;
+}
+
+#blog_img2
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/brain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+#blog_img
+{   
+    height: 245px;
+    width: auto;
+    background-image: url('./images/nodmcu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+#blog_img3
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/lidar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+.few_Words
+{
+    bottom:0px;
+    margin:0;
+    position: absolute;
+    background-color: rgba(76, 194, 92, 0.66);
+    border-radius: 0.5rem;
+}
 .skills
 {
     display:flex;
