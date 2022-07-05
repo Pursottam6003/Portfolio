@@ -283,6 +283,10 @@ ul li
 {
     color: #f81313;
 }
+#myname:hover 
+{
+    text-decoration: underline;
+}
 .buttons 
 {
     width: 300px;
@@ -342,10 +346,20 @@ ul li
     text-align: center;
     padding-top: 20px;
 }
-.About h2 
+
+#imageAbout
+{
+    border-radius:3rem;
+}
+.About  h2 
 {
     text-align: center;
 }
+#abt:hover
+{
+    text-decoration:  underline;
+}
+ 
 
 .About h3 
 {
@@ -380,6 +394,10 @@ h3
     border:none;
     border-radius: 10px;
 }
+.viewBlogs:hover 
+{
+    background-color: #0665e2;
+}
 .blog_representation
 {
     
@@ -391,6 +409,16 @@ h3
 #blog1
 {
     color: white;
+}
+
+#blog1 :hover
+{
+    text-decoration: underline;
+}
+
+.HowerMe:hover 
+{
+    text-decoration: underline;
 }
 
 #blog_img2
@@ -455,16 +483,17 @@ h3
 }
 .bound 
 { 
-    width: 105px;
+    width: 90px;
     margin: auto;
     color:black;
     font-weight: 800;
+    text-align: center;
     padding:5px;
     animation-duration: 3s;
     animation-name: skillsanimation;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in;
-    text-align: left;
+ 
     border-radius: 5px;
 }
 .php
@@ -529,6 +558,22 @@ h3
 }
 
 
+.hobbies
+{
+    margin:auto;
+    display: block;
+    text-align: center;
+}
+.hobbiesList
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:60px;
+    text-align: center;
+}
+
 .experience 
 {
     padding-top: 1.5rem;
@@ -578,13 +623,7 @@ h3
     gap:6rem;
 }
 
-.exp6
-{
-    width: 250px;
-    height: 435px;
-    margin: auto;
-} 
-
+ 
 .imageexp6 
 {
     height: 250px;
@@ -605,14 +644,7 @@ h3
     width: 260px;
     height: 320px;
 } */
-
-.exp7
-{
-    width: 250px;
-    height: 435px;
-    margin: auto;
-} 
-
+ 
 .imageexp7
 {
     height: 251px;
@@ -639,19 +671,17 @@ h3
     margin-left: 55%;
     text-align: center;
     padding: 6px;
-    background-color: blue;
+    background-color:  #0665e2;
     color:white;
     border: 3px solid white;
     border-radius: 10px;
 
 }
-.exp8
+ 
+.Readmore:hover 
 {
-    width: 250px;
-    height: 435px;
-    margin: auto;
-} 
-
+    background-color: #5ee206;
+}
 .imageexp8
 {
     height: 250px;
@@ -670,14 +700,18 @@ h3
     width: 260px;
     height: 260px;
 } */
-
-
-.exp1 
+.exp 
 {
-    width: 250px;
+     
+    margin:auto;
     height: 435px;
-    margin: auto;
-} 
+    width: 250px;
+}
+.hobbies_title
+{
+    font-weight: 600;
+}
+ 
 
 .imageexp1 
 {
@@ -806,6 +840,7 @@ h3
     width: 320px;
     height: 450px;
     margin:auto;
+    max-width: 100%;
 }
 
 #exp4
@@ -843,19 +878,7 @@ h3
     text-decoration: none;
 }
 
-/* .imageexp4:hover
-{
-    width: 330px;
-    height: 270px;
-} */
-
-.exp5 
-{
-    width: 300px;
-    height: 450px;
-    margin:auto;
-}
-
+ 
 #exp5
 {
     position: relative;
@@ -970,7 +993,7 @@ h3
   
   
 @media only screen  and (max-width:400px){ 
-    .exp1
+    .exp 
     {
         height: fit-content;
     }
@@ -1156,6 +1179,8 @@ h3
     height: 170px;
     overflow: hidden;
 }
+
+
 
 #badge1 
 {   
@@ -1422,6 +1447,11 @@ form
     height: 30px;
     color: rgb(241, 236, 236);
     background-color: #0665e2;
+}
+
+.submit:hover 
+{
+    background-color: #229d34;
 }
 
 footer 
