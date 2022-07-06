@@ -436,7 +436,7 @@ h3
 {
     height: 245px;
     width: auto;
-    background-image: url('./images/brain.jpg');
+    background-image: url('./images/brain.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative; 
@@ -445,7 +445,7 @@ h3
 {   
     height: 245px;
     width: auto;
-    background-image: url('./images/nodmcu.jpg');
+    background-image: url('./images/nodmcu.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
