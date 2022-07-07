@@ -858,7 +858,7 @@ h3
 {
     position: relative;
     border-radius: 1rem;
-    width:  auto;
+    width:  260px;
     height: 200px;
     
 }
@@ -1465,6 +1465,67 @@ form
     background-color: #229d34;
 }
 
+
+.Achievement
+{
+    text-align: center;
+}
+.achiementsList
+{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+   .flip-card-back, .flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-front {
+    padding-top:20px;
+    background-color: rgb(235, 216, 13);
+    color: black;
+  }
+  .flip-card-front p 
+  {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .flip-card-back {
+   
+    color: white;
+    transform: rotateY(180deg);
+  }
 footer 
 {   
     margin-top: 100px;
