@@ -173,6 +173,19 @@ html
         display: none;
     }
 }
+
+@media (max-width:440px)
+{
+    .mobilenav 
+    {
+        display: block;
+    }
+
+    #HomeNav
+    {
+        display: none;
+    }
+}
 @media screen and (max-width: 526px)
 {
     #namaste 
