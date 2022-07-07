@@ -415,6 +415,46 @@ ul li
     position: relative; 
 }
 
+#blog_img4
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/engineering_photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+#blog_img5
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/coding.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+#blog_img6
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/jee.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+#blog_img7
+{
+    height: 245px;
+    width: auto;
+    background-image: url('./images/jeet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
 .few_Words
 {
     bottom:0px;
