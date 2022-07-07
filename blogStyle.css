@@ -31,6 +31,44 @@ html
    display: inline-block;
    margin-left: 2rem;
 }
+
+.PostDetails
+{
+    margin: auto;
+    text-align: center;
+}
+
+.PostDetails h2:hover
+{
+    text-decoration: underline;
+}
+
+pre 
+{
+    width: 100%;
+    overflow: scroll;
+    padding-top:20px;
+}
+
+.PostDetails ol
+{
+    display: inline-block;
+    text-align: left;    
+    margin-left:15%;
+}
+
+.PostDetails p 
+{
+    text-align: left;
+    display: block;
+    padding-left: 10%;
+}
+
+.PostDetails img 
+{
+    display: block;
+    margin: auto;
+}
 #profile
 {
     position: relative;
@@ -237,6 +275,7 @@ a{
     color:rgb(250, 253, 255);
     display: block;
 }
+
 ul li 
 {
     list-style: none;
@@ -254,10 +293,11 @@ ul li
     z-index: 1;
     /* #06728d */
 }
-li:hover
+.HoverMe:hover
 {
     background-color: #659DFF;
 }
+
 
 .mainbody
 {
@@ -383,7 +423,12 @@ li:hover
     background-color: rgba(76, 194, 92, 0.66);
     border-radius: 0.5rem;
 }
- 
+
+.readme_hide
+{
+   display: none; 
+   text-align: center;
+}
  
 .contact 
 {
@@ -483,7 +528,7 @@ form
     color: rgb(241, 236, 236);
     background-color: #0665e2;
 }
-
+ 
 
 
  
@@ -659,7 +704,16 @@ footer a
     color:whitesmoke;
     font-size: small;     
 }
-
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+} 
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
  
