@@ -110,10 +110,10 @@ html
 
 @keyframes welcome 
 {
-    0%{background-color: blueviolet; left:0px; top:0px;}
-    25%{transform: rotate(-30deg); background-color: cornflowerblue;left:41%;}
+    0%{background-color: rgb(105, 32, 173); left:0px; top:0px;}
+    25%{transform: rotate(-30deg); background-color: rgb(60, 107, 195);left:41%;}
     45%{ transform: rotate(0deg); left:52%;}
-    65%{ transform: rotate(60deg); background-color: blueviolet; top:0px; left:90%;}
+    65%{ transform: rotate(60deg); background-color: rgb(104, 33, 171); top:0px; left:90%;}
     100%{top:0px;left:0px; transform:rotate(-360deg);} 
 }
 
