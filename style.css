@@ -631,9 +631,8 @@ h3
 
 #projecticon 
 {   
-    position:relative;
-    margin-left: 48%;
-    margin-right:49%;
+    display: block;
+    margin: auto;
 }
 
 
